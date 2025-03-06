@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colored Website</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333;">
+
+  <!-- Header Section -->
+  <header style="background-color: #007BFF; color: white; padding: 20px; text-align: center;">
+    <h1 style="margin: 0;">Welcome to My Colored Website</h1>
+    <p style="margin: 5px 0 0;">A vibrant and interactive experience!</p>
+  </header>
+
+  <!-- Main Content Section -->
+  <main style="padding: 20px;">
+    <section style="background-color: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+      <h2 style="color: #007BFF;">About This Website</h2>
+      <p>This is a simple website with inline CSS and JavaScript to demonstrate how to create a colorful and interactive page.</p>
+      <button onclick="changeColor()" style="background-color: #007BFF; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">
+        Click Me to Change Color!
+      </button>
+    </section>
+
+    <!-- Colorful Grid Section -->
+    <section style="margin-top: 20px;">
+      <h2 style="color: #007BFF;">Colorful Grid</h2>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+        <div style="background-color: #ff6b6b; padding: 20px; text-align: center; border-radius: 10px; color: white;">Red</div>
+        <div style="background-color: #4ecdc4; padding: 20px; text-align: center; border-radius: 10px; color: white;">Teal</div>
+        <div style="background-color: #ffe66d; padding: 20px; text-align: center; border-radius: 10px; color: black;">Yellow</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer style="background-color: #333; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%;">
+    <p style="margin: 0;">&copy; 2023 Colored Website. All rights reserved.</p>
+  </footer>
+
+  <!-- Inline JavaScript -->
+  <script>
+    function changeColor() {
+      const colors = ['#ff6b6b', '#4ecdc4', '#ffe66d', '#007BFF', '#333'];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.backgroundColor = randomColor;
+    }
+  </script>
+</body>
+</html>
